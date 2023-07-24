@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		145A419EF713F2217BEA43BB /* Pods_JMKFFRouterManagerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD51C0EEDC107A1D4FB521D3 /* Pods_JMKFFRouterManagerDemo.framework */; };
 		C2F4B4802A6A8469009C191C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F4B47F2A6A8469009C191C /* AppDelegate.m */; };
 		C2F4B4832A6A8469009C191C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F4B4822A6A8469009C191C /* SceneDelegate.m */; };
 		C2F4B4862A6A8469009C191C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F4B4852A6A8469009C191C /* ViewController.m */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8142C8315A4D196C8C1A69E3 /* Pods-JMKFFRouterManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMKFFRouterManagerDemo.release.xcconfig"; path = "Target Support Files/Pods-JMKFFRouterManagerDemo/Pods-JMKFFRouterManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AD51C0EEDC107A1D4FB521D3 /* Pods_JMKFFRouterManagerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMKFFRouterManagerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F6A0C465FB7C27B9FE88D3 /* Pods-JMKFFRouterManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMKFFRouterManagerDemo.debug.xcconfig"; path = "Target Support Files/Pods-JMKFFRouterManagerDemo/Pods-JMKFFRouterManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C2F4B47B2A6A8469009C191C /* JMKFFRouterManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMKFFRouterManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F4B47E2A6A8469009C191C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2F4B47F2A6A8469009C191C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,17 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145A419EF713F2217BEA43BB /* Pods_JMKFFRouterManagerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E594571377EFB61A5545006 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD51C0EEDC107A1D4FB521D3 /* Pods_JMKFFRouterManagerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2092DA8A35F1DCFED4A0EB0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0F6A0C465FB7C27B9FE88D3 /* Pods-JMKFFRouterManagerDemo.debug.xcconfig */,
+				8142C8315A4D196C8C1A69E3 /* Pods-JMKFFRouterManagerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C2F4B4722A6A8469009C191C = {
 			isa = PBXGroup;
 			children = (
 				C2F4B47D2A6A8469009C191C /* JMKFFRouterManagerDemo */,
 				C2F4B47C2A6A8469009C191C /* Products */,
+				2092DA8A35F1DCFED4A0EB0B /* Pods */,
+				0E594571377EFB61A5545006 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2F4B4942A6A846D009C191C /* Build configuration list for PBXNativeTarget "JMKFFRouterManagerDemo" */;
 			buildPhases = (
+				EC8F1C4E5687E9BC721E2BA1 /* [CP] Check Pods Manifest.lock */,
 				C2F4B4772A6A8469009C191C /* Sources */,
 				C2F4B4782A6A8469009C191C /* Frameworks */,
 				C2F4B4792A6A8469009C191C /* Resources */,
+				DFE7A02E68CC9E07BFB5D7D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DFE7A02E68CC9E07BFB5D7D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JMKFFRouterManagerDemo/Pods-JMKFFRouterManagerDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JMKFFRouterManagerDemo/Pods-JMKFFRouterManagerDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JMKFFRouterManagerDemo/Pods-JMKFFRouterManagerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC8F1C4E5687E9BC721E2BA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JMKFFRouterManagerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C2F4B4772A6A8469009C191C /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		C2F4B4952A6A846D009C191C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F6A0C465FB7C27B9FE88D3 /* Pods-JMKFFRouterManagerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +384,7 @@
 		};
 		C2F4B4962A6A846D009C191C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8142C8315A4D196C8C1A69E3 /* Pods-JMKFFRouterManagerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

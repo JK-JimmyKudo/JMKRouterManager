@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-JMKFFRouterManagerDemo/Pods-JMKFFRouterManagerDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FFRouter/FFRouter.framework
+${BUILT_PRODUCTS_DIR}/JYCarousel/JYCarousel.framework
+${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework

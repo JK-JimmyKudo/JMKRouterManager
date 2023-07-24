@@ -1,0 +1,24 @@
+PODS:
+  - FFRouter (1.1.1)
+  - JYCarousel (0.0.3)
+  - MJExtension (3.4.1)
+
+DEPENDENCIES:
+  - FFRouter
+  - JYCarousel
+  - MJExtension
+
+SPEC REPOS:
+  trunk:
+    - FFRouter
+    - JYCarousel
+    - MJExtension
+
+SPEC CHECKSUMS:
+  FFRouter: dfda137b8f6817ca92dc9a1151727449548abfd3
+  JYCarousel: a2f25330a90775505a57c6d731e1606baad0d330
+  MJExtension: 21c5f6f8c4d5d8844b7ae8fbae08fed0b501f961
+
+PODFILE CHECKSUM: 177b9ec933f3848e7dd9f1a3c463232288fc1e8a
+
+COCOAPODS: 1.12.1
