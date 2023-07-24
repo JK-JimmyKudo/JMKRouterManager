@@ -8,8 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		145A419EF713F2217BEA43BB /* Pods_JMKFFRouterManagerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD51C0EEDC107A1D4FB521D3 /* Pods_JMKFFRouterManagerDemo.framework */; };
+		C25575092A6E040000585F2B /* JMKFFRouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C25575082A6E040000585F2B /* JMKFFRouterManager.m */; };
+		C25575102A6E093900585F2B /* JMKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C255750F2A6E093900585F2B /* JMKBaseViewController.m */; };
+		C25575162A6E096B00585F2B /* JMKTranslateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25575142A6E096B00585F2B /* JMKTranslateViewController.m */; };
+		C255751C2A6E09D100585F2B /* JMKMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C255751B2A6E09D100585F2B /* JMKMineViewController.m */; };
+		C255751F2A6E09DF00585F2B /* JMKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C255751E2A6E09DF00585F2B /* JMKHomeViewController.m */; };
+		C25575232A6E0A4400585F2B /* JMKPassportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25575222A6E0A4400585F2B /* JMKPassportViewController.m */; };
+		C25575262A6E16B800585F2B /* JMKDestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25575242A6E16B700585F2B /* JMKDestinationViewController.m */; };
+		C255752A2A6E18D400585F2B /* router_class_common_map.json in Resources */ = {isa = PBXBuildFile; fileRef = C25575282A6E18D400585F2B /* router_class_common_map.json */; };
+		C255752B2A6E18D400585F2B /* router_simple_names.json in Resources */ = {isa = PBXBuildFile; fileRef = C25575292A6E18D400585F2B /* router_simple_names.json */; };
 		C2F4B4802A6A8469009C191C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F4B47F2A6A8469009C191C /* AppDelegate.m */; };
-		C2F4B4832A6A8469009C191C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F4B4822A6A8469009C191C /* SceneDelegate.m */; };
 		C2F4B4862A6A8469009C191C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F4B4852A6A8469009C191C /* ViewController.m */; };
 		C2F4B4892A6A8469009C191C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2F4B4872A6A8469009C191C /* Main.storyboard */; };
 		C2F4B48B2A6A846D009C191C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F4B48A2A6A846D009C191C /* Assets.xcassets */; };
@@ -21,11 +29,26 @@
 		8142C8315A4D196C8C1A69E3 /* Pods-JMKFFRouterManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMKFFRouterManagerDemo.release.xcconfig"; path = "Target Support Files/Pods-JMKFFRouterManagerDemo/Pods-JMKFFRouterManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		AD51C0EEDC107A1D4FB521D3 /* Pods_JMKFFRouterManagerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMKFFRouterManagerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F6A0C465FB7C27B9FE88D3 /* Pods-JMKFFRouterManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMKFFRouterManagerDemo.debug.xcconfig"; path = "Target Support Files/Pods-JMKFFRouterManagerDemo/Pods-JMKFFRouterManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C25575072A6E040000585F2B /* JMKFFRouterManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMKFFRouterManager.h; sourceTree = "<group>"; };
+		C25575082A6E040000585F2B /* JMKFFRouterManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMKFFRouterManager.m; sourceTree = "<group>"; };
+		C255750E2A6E093900585F2B /* JMKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMKBaseViewController.h; sourceTree = "<group>"; };
+		C255750F2A6E093900585F2B /* JMKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMKBaseViewController.m; sourceTree = "<group>"; };
+		C25575142A6E096B00585F2B /* JMKTranslateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMKTranslateViewController.m; sourceTree = "<group>"; };
+		C25575152A6E096B00585F2B /* JMKTranslateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMKTranslateViewController.h; sourceTree = "<group>"; };
+		C255751A2A6E09D100585F2B /* JMKMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMKMineViewController.h; sourceTree = "<group>"; };
+		C255751B2A6E09D100585F2B /* JMKMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMKMineViewController.m; sourceTree = "<group>"; };
+		C255751D2A6E09DF00585F2B /* JMKHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMKHomeViewController.h; sourceTree = "<group>"; };
+		C255751E2A6E09DF00585F2B /* JMKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMKHomeViewController.m; sourceTree = "<group>"; };
+		C25575212A6E0A4400585F2B /* JMKPassportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMKPassportViewController.h; sourceTree = "<group>"; };
+		C25575222A6E0A4400585F2B /* JMKPassportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMKPassportViewController.m; sourceTree = "<group>"; };
+		C25575242A6E16B700585F2B /* JMKDestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMKDestinationViewController.m; sourceTree = "<group>"; };
+		C25575252A6E16B800585F2B /* JMKDestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMKDestinationViewController.h; sourceTree = "<group>"; };
+		C25575282A6E18D400585F2B /* router_class_common_map.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = router_class_common_map.json; sourceTree = "<group>"; };
+		C25575292A6E18D400585F2B /* router_simple_names.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = router_simple_names.json; sourceTree = "<group>"; };
+		C255752C2A6E18F600585F2B /* JMKFFRouterManagerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JMKFFRouterManagerDemo.entitlements; sourceTree = "<group>"; };
 		C2F4B47B2A6A8469009C191C /* JMKFFRouterManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMKFFRouterManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F4B47E2A6A8469009C191C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2F4B47F2A6A8469009C191C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C2F4B4812A6A8469009C191C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		C2F4B4822A6A8469009C191C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		C2F4B4842A6A8469009C191C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C2F4B4852A6A8469009C191C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C2F4B4882A6A8469009C191C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,8 +84,73 @@
 				B0F6A0C465FB7C27B9FE88D3 /* Pods-JMKFFRouterManagerDemo.debug.xcconfig */,
 				8142C8315A4D196C8C1A69E3 /* Pods-JMKFFRouterManagerDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C25575062A6E03D600585F2B /* JMKFFRouterManager */ = {
+			isa = PBXGroup;
+			children = (
+				C25575072A6E040000585F2B /* JMKFFRouterManager.h */,
+				C25575082A6E040000585F2B /* JMKFFRouterManager.m */,
+			);
+			path = JMKFFRouterManager;
+			sourceTree = "<group>";
+		};
+		C255750A2A6E08C000585F2B /* JMKBaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C255750E2A6E093900585F2B /* JMKBaseViewController.h */,
+				C255750F2A6E093900585F2B /* JMKBaseViewController.m */,
+			);
+			path = JMKBaseControllers;
+			sourceTree = "<group>";
+		};
+		C255750B2A6E08C300585F2B /* JMKMine */ = {
+			isa = PBXGroup;
+			children = (
+				C255751A2A6E09D100585F2B /* JMKMineViewController.h */,
+				C255751B2A6E09D100585F2B /* JMKMineViewController.m */,
+			);
+			path = JMKMine;
+			sourceTree = "<group>";
+		};
+		C255750C2A6E08C400585F2B /* JMKTranslate */ = {
+			isa = PBXGroup;
+			children = (
+				C25575152A6E096B00585F2B /* JMKTranslateViewController.h */,
+				C25575142A6E096B00585F2B /* JMKTranslateViewController.m */,
+				C25575252A6E16B800585F2B /* JMKDestinationViewController.h */,
+				C25575242A6E16B700585F2B /* JMKDestinationViewController.m */,
+			);
+			path = JMKTranslate;
+			sourceTree = "<group>";
+		};
+		C255750D2A6E08C500585F2B /* JMKHome */ = {
+			isa = PBXGroup;
+			children = (
+				C25575202A6E0A0400585F2B /* JMKPassport */,
+				C255751D2A6E09DF00585F2B /* JMKHomeViewController.h */,
+				C255751E2A6E09DF00585F2B /* JMKHomeViewController.m */,
+			);
+			path = JMKHome;
+			sourceTree = "<group>";
+		};
+		C25575202A6E0A0400585F2B /* JMKPassport */ = {
+			isa = PBXGroup;
+			children = (
+				C25575212A6E0A4400585F2B /* JMKPassportViewController.h */,
+				C25575222A6E0A4400585F2B /* JMKPassportViewController.m */,
+			);
+			path = JMKPassport;
+			sourceTree = "<group>";
+		};
+		C25575272A6E18AD00585F2B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C25575282A6E18D400585F2B /* router_class_common_map.json */,
+				C25575292A6E18D400585F2B /* router_simple_names.json */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		C2F4B4722A6A8469009C191C = {
@@ -86,10 +174,15 @@
 		C2F4B47D2A6A8469009C191C /* JMKFFRouterManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C255752C2A6E18F600585F2B /* JMKFFRouterManagerDemo.entitlements */,
+				C25575272A6E18AD00585F2B /* Resource */,
+				C255750D2A6E08C500585F2B /* JMKHome */,
+				C255750C2A6E08C400585F2B /* JMKTranslate */,
+				C255750B2A6E08C300585F2B /* JMKMine */,
+				C255750A2A6E08C000585F2B /* JMKBaseControllers */,
+				C25575062A6E03D600585F2B /* JMKFFRouterManager */,
 				C2F4B47E2A6A8469009C191C /* AppDelegate.h */,
 				C2F4B47F2A6A8469009C191C /* AppDelegate.m */,
-				C2F4B4812A6A8469009C191C /* SceneDelegate.h */,
-				C2F4B4822A6A8469009C191C /* SceneDelegate.m */,
 				C2F4B4842A6A8469009C191C /* ViewController.h */,
 				C2F4B4852A6A8469009C191C /* ViewController.m */,
 				C2F4B4872A6A8469009C191C /* Main.storyboard */,
@@ -162,7 +255,9 @@
 			files = (
 				C2F4B48E2A6A846D009C191C /* LaunchScreen.storyboard in Resources */,
 				C2F4B48B2A6A846D009C191C /* Assets.xcassets in Resources */,
+				C255752B2A6E18D400585F2B /* router_simple_names.json in Resources */,
 				C2F4B4892A6A8469009C191C /* Main.storyboard in Resources */,
+				C255752A2A6E18D400585F2B /* router_class_common_map.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,10 +310,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C25575262A6E16B800585F2B /* JMKDestinationViewController.m in Sources */,
+				C25575162A6E096B00585F2B /* JMKTranslateViewController.m in Sources */,
+				C255751F2A6E09DF00585F2B /* JMKHomeViewController.m in Sources */,
 				C2F4B4862A6A8469009C191C /* ViewController.m in Sources */,
+				C25575102A6E093900585F2B /* JMKBaseViewController.m in Sources */,
 				C2F4B4802A6A8469009C191C /* AppDelegate.m in Sources */,
+				C255751C2A6E09D100585F2B /* JMKMineViewController.m in Sources */,
 				C2F4B4912A6A846D009C191C /* main.m in Sources */,
-				C2F4B4832A6A8469009C191C /* SceneDelegate.m in Sources */,
+				C25575092A6E040000585F2B /* JMKFFRouterManager.m in Sources */,
+				C25575232A6E0A4400585F2B /* JMKPassportViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JMKFFRouterManagerDemo/JMKFFRouterManagerDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BUCWZY2XF4;
@@ -375,7 +477,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = JMKFFRouterManager.JMKFFRouterManagerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = JMKFFRouterManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -388,6 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JMKFFRouterManagerDemo/JMKFFRouterManagerDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BUCWZY2XF4;
@@ -403,7 +506,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = JMKFFRouterManager.JMKFFRouterManagerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = JMKFFRouterManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

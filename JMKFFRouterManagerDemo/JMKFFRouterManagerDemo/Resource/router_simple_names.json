@@ -1,0 +1,8 @@
+{
+    "presentJMKHomeViewController":"TestDemo://JMKHomeViewController/Home?jumptype=present",
+    "JMKHomeViewController":"TestDemo://JMKHomeViewController/HVC?jumptype=push",
+    "JMKTranslateViewController":"TestDemo://JMKTranslateViewController/Translate",
+    "JMKDestinationViewController":"TestDemo://JMKDestinationViewController/Destination",
+    "DViewController":"TestDemo://AControllers/DControllers/DVC",
+    "EViewController":"TestDemo://JMKMineViewController/Mine"
+}

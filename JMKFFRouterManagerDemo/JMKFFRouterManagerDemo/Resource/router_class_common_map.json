@@ -1,0 +1,48 @@
+{
+    "JMKHome":[
+        {
+            "url":"TestDemo://JMKHomeViewController/HVC",
+            "iosclass":"JMKHomeViewController",
+            "androidclass":""
+        },
+        {
+            "url":"TestDemo://JMKHomeViewController/HVC",
+            "iosclass":"JMKHomeViewController",
+            "androidclass":""
+        },
+        {
+            "url":"TestDemo://AControllers/EVC",
+            "iosclass":"EViewController",
+            "androidclass":""
+        }
+    ],
+    
+    "JMKTranslate":[
+        {
+            "url":"TestDemo://JMKTranslateViewController/Translate",
+            "iosclass":"JMKTranslateViewController",
+            "androidclass":""
+        },
+        {
+            "url":"TestDemo://JMKDestinationViewController/Destination",
+            "iosclass":"JMKDestinationViewController",
+            "androidclass":""
+        }
+    ],
+    
+    "JMKMine":[
+        {
+            
+            "iosclass":"JMKMineViewController",
+            "androidclass":""
+        }
+    ],
+    
+    "AControllers/DControllers":[
+        {
+            "url":"TestDemo://AControllers/DControllers/DVC",
+            "iosclass":"DViewController",
+            "androidclass":""
+        }
+    ],
+}
