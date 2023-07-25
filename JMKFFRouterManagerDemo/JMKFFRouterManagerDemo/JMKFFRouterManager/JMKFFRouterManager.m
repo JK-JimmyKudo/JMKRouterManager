@@ -184,10 +184,23 @@ static JMKFFRouterManager * _manager = nil;
     }
     if (className == nil) {
         for (NSString *key in [self shareManager].routeNamesDictionary.allKeys) {
+            NSLog(@"key == -- %@",key);
+
+            
             NSString * value = [self shareManager].routeNamesDictionary[key];
+            NSLog(@"value == -- %@",value);
+
             if ([value isEqualToString:routeURL]) className = key;
+            
+            NSLog(@"className == -- %@",className);
         }
+        
+        NSLog(@"routeURL == -- %@",routeURL);
+
         className = [[self shareManager].routeClassNameMap objectForKey:routeURL];
+        
+        NSLog(@"==== className == -- %@",className);
+
     }
     return className;
 }

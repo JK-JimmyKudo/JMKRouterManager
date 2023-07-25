@@ -36,7 +36,7 @@
 
 - (void)backClick{
     if ([self backBlock]) {
-        self.backBlock();
+        self.backBlock(@"hdaudauhhada");
     }
     [self dismissViewControllerAnimated:YES completion:nil];
 }

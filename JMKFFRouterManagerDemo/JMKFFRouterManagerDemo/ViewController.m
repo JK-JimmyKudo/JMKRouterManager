@@ -8,11 +8,11 @@
 #import "ViewController.h"
 #import "JMKFFRouterManager.h"
 #import "JMKBaseViewController.h"
-#import "JMKHomeViewController.h"
-#import "JMKTranslateViewController.h"
-#import "JMKMineViewController.h"
-#import "JMKPassportViewController.h"
-#import "JMKDestinationViewController.h"
+//#import "JMKHomeViewController.h"
+//#import "JMKTranslateViewController.h"
+//#import "JMKMineViewController.h"
+//#import "JMKPassportViewController.h"
+//#import "JMKDestinationViewController.h"
 @interface ViewController ()
 
 @property (nonatomic,strong) UIImage *image;
@@ -25,7 +25,9 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
     
-    NSArray * ary = @[@"JMKHomeViewController",@"JMKTranslateViewController",@"JMKMineViewController",@"JMKPassportViewController",@"JMKDestinationViewController",@"presentA"];
+    
+    NSArray * ary = @[@"JMKHomeController",@"JMKMineController",@"JMKPassportController",@"JMKTranslateController",@"JMKDestinationController",@"presentJMKHomeController"];
+    
     for (int i = 0; i < 6; i ++) {
         UIButton * btn = [[UIButton alloc] initWithFrame:CGRectMake(50, 100 + i * 100, 280, 50)];
         [btn setBackgroundColor:[UIColor blueColor]];
@@ -40,47 +42,48 @@
     switch (sender.tag) {
         case 0:
         {
-            [JMKFFRouterManager routeWithName:@"JMKHomeViewController" isPresent:NO];
-            //            [FFRouterManager routeWithName:@"AViewController"  withParameters:@{@"111":@"222"}  isPresent:NO];
+            [JMKFFRouterManager routeWithName:@"JMKHomeController" isPresent:NO];
+            //            [FFRouterManager routeWithName:@"JMKHomeController"  withParameters:@{@"111":@"222"}  isPresent:NO];
         }
             break;
         case 1:
         {
             
             NSDictionary *parameters = @{@"name":@"222",@"sex":@"男"} ;
-            //            [FFRouterManager routeWithName:@"BViewController" isPresent:NO];
-            [JMKFFRouterManager routeWithName:@"JMKTranslateViewController"  withParameters:@{@"parameters":parameters}  isPresent:NO];
+            //            [FFRouterManager routeWithName:@"JMKMineController" isPresent:NO];
+            [JMKFFRouterManager routeWithName:@"JMKMineController"  withParameters:@{@"parameters":parameters}  isPresent:NO];
         }
             break;
         case 2:
         {
-            JMKBaseViewController * vc = [JMKFFRouterManager routeObjectWithName:@"JMKMineViewController" isPresent:YES];
-            
+            NSDictionary *parameters = @{@"name":@"222",@"sex":@"男"} ;
+            JMKBaseViewController * vc = [JMKFFRouterManager routeObjectWithName:@"JMKPassportController" isPresent:YES];
             __weak ViewController * weakself = self;
             __weak JMKBaseViewController * weakvc = vc;
-            vc.backBlock = ^{
-                [weakself.view setBackgroundColor:weakvc.view.backgroundColor];
-            
-                self.image = [UIImage imageNamed:@"xxx"];
+            vc.backBlock = ^(NSString *name) {
+                NSLog(@"name -- %@",name);
             };
+//
+//            [JMKFFRouterManager routeWithName:@"JMKPassportController"  withParameters:@{@"parameters":parameters}  isPresent:NO];
         }
             break;
         case 3:
         {
             __weak ViewController * weakself = self;
-            [JMKFFRouterManager routeCallbackWithName:@"JMKPassportViewController" isPresent:NO targetCallback:^(id callbackObjc) {
+            [JMKFFRouterManager routeCallbackWithName:@"JMKTranslateController" isPresent:NO targetCallback:^(id callbackObjc) {
                 NSLog(@"callbackObjc = %@",callbackObjc);
                 
             }];
         }
             break;
         case 4:
-            //            [FFRouterManager routeWithName:@"EViewController" isPresent:NO];
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"JLRouterDemo://"] options:@{} completionHandler:nil];
+                      
+            [JMKFFRouterManager routeWithName:@"JMKDestinationController" isPresent:NO];
+
             
             break;
         case 5:
-            [JMKFFRouterManager routeWithName:@"AViewController" isPresent:YES];
+            [JMKFFRouterManager routeWithName:@"JMKHomeController" isPresent:YES];
             break;
         default:
             break;

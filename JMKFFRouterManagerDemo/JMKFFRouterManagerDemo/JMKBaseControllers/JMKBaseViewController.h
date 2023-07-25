@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^RouterBackEventBlock)(void);
+typedef void (^RouterBackEventBlock)(NSString *name);
 //获取设备的物理高度
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 //获取设备的物理宽度

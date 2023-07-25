@@ -8,7 +8,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "JMKFFRouterManager.h"
-
+//"presentAViewController":"TestDemo://AControllers/AVC?jumptype=present",
 @interface AppDelegate ()
 
 @end
@@ -29,16 +29,18 @@
     
     
 }
-
+/// 注册路由
 -(void)registerRouteURLs{
     
-    [JMKFFRouterManager registerRouteURLs:@[@"/JMKHomeViewController/:controller",
-                                         @"/JMKHomeViewController/:controller",
-                                         @"/JMKTranslateViewController/:controller",
-                                         @"/JMKMineViewController/:controller",
-                                         @"/AControllers/DControllers/:controller"] scheme:@"TestDemo://"];
-    [JMKFFRouterManager registerObjectRouteURLs:@[@"/JMKMineViewController/:controller"] scheme:@"TestDemo://"];
-    [JMKFFRouterManager registerCallbackRouteURLs:@[@"/AControllers/DControllers/:controller"] scheme:@"TestDemo://"];
+    ////JMKHome/:controller 路径配置
+    [JMKFFRouterManager registerRouteURLs:@[@"/JMKHome/:controller",
+                                         @"/JMKHome/JMKTranslate/:controller",
+                                         @"/JMKMine/:controller",
+                                         @"/JMKPassport/:controller"] scheme:@"TestDemo://"];
+    ///
+    [JMKFFRouterManager registerObjectRouteURLs:@[@"/JMKPassport/:controller"] scheme:@"TestDemo://"];
+    
+    [JMKFFRouterManager registerCallbackRouteURLs:@[@"/JMKHome/JMKTranslate/:controller"] scheme:@"TestDemo://"];
     
 }
 @end

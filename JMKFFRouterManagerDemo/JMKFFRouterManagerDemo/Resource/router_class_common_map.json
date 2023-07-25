@@ -1,47 +1,36 @@
 {
     "JMKHome":[
         {
-            "url":"TestDemo://JMKHomeViewController/HVC",
-            "iosclass":"JMKHomeViewController",
+            "url":"TestDemo://JMKHome/AVC",
+            "iosclass":"JMKHomeController",
             "androidclass":""
         },
         {
-            "url":"TestDemo://JMKHomeViewController/HVC",
-            "iosclass":"JMKHomeViewController",
-            "androidclass":""
-        },
-        {
-            "url":"TestDemo://AControllers/EVC",
-            "iosclass":"EViewController",
-            "androidclass":""
-        }
-    ],
-    
-    "JMKTranslate":[
-        {
-            "url":"TestDemo://JMKTranslateViewController/Translate",
-            "iosclass":"JMKTranslateViewController",
-            "androidclass":""
-        },
-        {
-            "url":"TestDemo://JMKDestinationViewController/Destination",
-            "iosclass":"JMKDestinationViewController",
+            "url":"TestDemo://JMKHome/EVC",
+            "iosclass":"JMKDestinationController",
             "androidclass":""
         }
     ],
     
     "JMKMine":[
         {
-            
-            "iosclass":"JMKMineViewController",
+            "url":"TestDemo://JMKMine/BVC",
+            "iosclass":"JMKMineController",
             "androidclass":""
         }
     ],
     
-    "AControllers/DControllers":[
+    "JMKPassport":[
         {
-            "url":"TestDemo://AControllers/DControllers/DVC",
-            "iosclass":"DViewController",
+            "url":"TestDemo://JMKPassport/CVC",
+            "iosclass":"JMKPassportController",
+            "androidclass":""
+        }
+    ],
+    "JMKHome/JMKTranslate":[
+        {
+            "url":"TestDemo://JMKHome/JMKTranslate/DVC",
+            "iosclass":"JMKTranslateController",
             "androidclass":""
         }
     ],
